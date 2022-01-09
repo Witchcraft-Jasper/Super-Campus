@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/school_App-master.iml" filepath="$PROJECT_DIR$/.idea/modules/school_App-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PhotoPicker/school_App-master.PhotoPicker.iml" filepath="$PROJECT_DIR$/.idea/modules/PhotoPicker/school_App-master.PhotoPicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TimetableView/school_App-master.TimetableView.iml" filepath="$PROJECT_DIR$/.idea/modules/TimetableView/school_App-master.TimetableView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/school_App-master.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/school_App-master.app.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,29 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\AndroidProject\schoolApp\TimetableView\AndroidManifest.xml:2:1-6:12
+INJECTED from D:\AndroidProject\schoolApp\TimetableView\AndroidManifest.xml:2:1-6:12
+INJECTED from D:\AndroidProject\schoolApp\TimetableView\AndroidManifest.xml:2:1-6:12
+	package
+		ADDED from D:\AndroidProject\schoolApp\TimetableView\AndroidManifest.xml:3:5-57
+		INJECTED from D:\AndroidProject\schoolApp\TimetableView\AndroidManifest.xml
+		INJECTED from D:\AndroidProject\schoolApp\TimetableView\AndroidManifest.xml
+	android:versionName
+		ADDED from D:\AndroidProject\schoolApp\TimetableView\AndroidManifest.xml:5:5-30
+	xmlns:android
+		ADDED from D:\AndroidProject\schoolApp\TimetableView\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from D:\AndroidProject\schoolApp\TimetableView\AndroidManifest.xml:4:5-28
+uses-sdk
+INJECTED from D:\AndroidProject\schoolApp\TimetableView\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\AndroidProject\schoolApp\TimetableView\AndroidManifest.xml
+INJECTED from D:\AndroidProject\schoolApp\TimetableView\AndroidManifest.xml
+INJECTED from D:\AndroidProject\schoolApp\TimetableView\AndroidManifest.xml
+INJECTED from D:\AndroidProject\schoolApp\TimetableView\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\AndroidProject\schoolApp\TimetableView\AndroidManifest.xml
+		ADDED from D:\AndroidProject\schoolApp\TimetableView\AndroidManifest.xml
+		INJECTED from D:\AndroidProject\schoolApp\TimetableView\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\AndroidProject\schoolApp\TimetableView\AndroidManifest.xml
+		ADDED from D:\AndroidProject\schoolApp\TimetableView\AndroidManifest.xml
+		INJECTED from D:\AndroidProject\schoolApp\TimetableView\AndroidManifest.xml

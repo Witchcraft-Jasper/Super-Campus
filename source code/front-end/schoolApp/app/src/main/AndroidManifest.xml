@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.campusapp">
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+
+    <application
+        android:name="com.example.campusapp.application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:requestLegacyExternalStorage="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" /> <!-- 拍照 -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.campusapp.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="name,authorities,exported,grantUriPermissions">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"
+                tools:replace="name,resource" />
+        </provider>
+
+        <activity
+            android:name="com.example.campusapp.TestActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.campusapp.activity.IntroActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.campusapp.activity.IndexSplashActivity"
+            android:exported="true" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="me.iwf.photopicker.PhotoPickerActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="me.iwf.photopicker.PhotoPagerActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="com.example.campusapp.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.example.campusapp.activity.RegisteredActivity" />
+        <activity android:name="com.example.campusapp.LoginActivity"></activity>
+        <activity android:name="com.example.campusapp.activity.ClipImageActivity" />
+        <activity android:name="com.example.campusapp.activity.UpdatePassWordActivity" />
+        <activity android:name="com.example.campusapp.activity.AddScheduleActivity" />
+        <activity android:name="com.example.campusapp.activity.AddLostFoundActivity" />
+        <activity android:name="com.example.campusapp.activity.MyCommentActivity" />
+        <activity android:name="com.example.campusapp.activity.MyMessageActivity" />
+        <activity android:name="com.example.campusapp.activity.SystemMessageActivity" />
+        <activity android:name="com.example.campusapp.activity.SearchActivity" />
+    </application>
+
+</manifest>

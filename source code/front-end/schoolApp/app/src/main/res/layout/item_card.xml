@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:cardCornerRadius="6dp">
+
+    <LinearLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <com.example.campusapp.view.cameraView.CircleImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:contentDescription="@null"
+            android:padding="1px"
+            android:src="@mipmap/default_avatar" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="22sp"
+            tools:text="haha" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="22sp"
+            tools:text="haha" />
+
+        <com.varunest.sparkbutton.SparkButton
+            android:id="@+id/spark_button"
+            android:layout_width="89dp"
+            android:layout_height="86dp"
+            android:layout_gravity="center"
+            app:sparkbutton_activeImage="@drawable/ic_heart_on"
+            app:sparkbutton_iconSize="40dp"
+            app:sparkbutton_inActiveImage="@drawable/ic_heart_off"
+            app:sparkbutton_primaryColor="@color/heart_primary_color"
+            app:sparkbutton_secondaryColor="@color/heart_secondary_color" />
+
+        <Button
+            android:id="@+id/buttonGetBlog"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_round"
+            android:layout_marginTop="60dp"
+            android:text="他的博客" />
+
+        <Button
+            android:id="@+id/buttonContact"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_round"
+            android:layout_marginTop="60dp"
+            android:text="联系他" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_like"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/back" />
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="98dp"
+            android:layout_height="107dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/more" />
+
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false">
+
+        <!-- This could be your fragment container, or something -->
+<!--        <FrameLayout-->
+<!--            android:id="@+id/contentContainer"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--            <com.github.florent37.materialtextfield.MaterialTextField-->
+<!--                android:id="@+id/username"-->
+<!--                android:layout_width="300dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center_horizontal"-->
+<!--                android:layout_marginTop="200dp"-->
+<!--                android:foregroundGravity="center_vertical|center_horizontal"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:mtf_image="@drawable/jinjianceng"-->
+<!--                app:mtf_labelColor="#666"-->
+<!--                tools:ignore="DuplicateClickableBoundsCheck">-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/et_login_name"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:layout_marginLeft="5dp"-->
+<!--                    android:layout_toRightOf="@+id/iv_login_name"-->
+<!--                    android:background="@null"-->
+<!--                    android:hint="@string/login_name_hint"-->
+<!--                    android:padding="3dp"-->
+<!--                    android:singleLine="true"-->
+<!--                    android:text=""-->
+<!--                    android:textColor="@color/text_gray_9"-->
+<!--                    android:textColorHint="@color/text_gray_9"-->
+<!--                    android:textSize="@dimen/text_size_16"-->
+<!--                    tools:ignore="TouchTargetSizeCheck" />-->
+
+
+<!--            </com.github.florent37.materialtextfield.MaterialTextField>-->
+
+<!--            <com.github.florent37.materialtextfield.MaterialTextField-->
+<!--                android:id="@+id/password"-->
+<!--                android:layout_width="300dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center_horizontal"-->
+<!--                android:layout_marginTop="300dp"-->
+<!--                android:foregroundGravity="center_vertical|center_horizontal"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:mtf_image="@drawable/meiduan"-->
+<!--                app:mtf_labelColor="#666">-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/et_login_pwd"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:layout_marginLeft="5dp"-->
+<!--                    android:layout_toRightOf="@+id/iv_login_pwd"-->
+<!--                    android:background="@null"-->
+<!--                    android:hint="@string/login_pwd_hint"-->
+<!--                    android:inputType="textPassword"-->
+<!--                    android:padding="3dp"-->
+<!--                    android:singleLine="true"-->
+<!--                    android:text=""-->
+<!--                    android:textColor="@color/text_gray_9"-->
+<!--                    android:textColorHint="@color/text_gray_9"-->
+<!--                    android:textSize="@dimen/text_size_16"-->
+<!--                    tools:ignore="TouchTargetSizeCheck" />-->
+
+<!--            </com.github.florent37.materialtextfield.MaterialTextField>-->
+<!--        </FrameLayout>-->
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/srl_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false">
+
+            <com.fashare.stack_layout.StackLayout
+                android:id="@+id/stack_layout"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:orientation="vertical"/>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

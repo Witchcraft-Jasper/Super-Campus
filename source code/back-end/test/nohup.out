@@ -1,0 +1,22 @@
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /code                     --> test/controller.SendCode (7 handlers)
+[GIN-debug] POST   /register                 --> test/controller.Register (7 handlers)
+[GIN-debug] POST   /login/sms                --> test/controller.LoginByEmail (7 handlers)
+[GIN-debug] POST   /login/word               --> test/controller.LoginByPassword (7 handlers)
+[GIN-debug] GET    /blog/all                 --> test/controller.GetAllBlog (6 handlers)
+[GIN-debug] GET    /blog/userid              --> test/controller.GetBlogById (6 handlers)
+[GIN-debug] POST   /blog/update              --> test/controller.CreateBlog (7 handlers)
+[GIN-debug] POST   /blog/picture             --> test/controller.InsertPicture (6 handlers)
+[GIN-debug] GET    /schedule/GetScheduleByUserId --> test/controller.GetScheduleById (6 handlers)
+[GIN-debug] POST   /schedule/AddSchedule     --> test/controller.ModifySchedule (7 handlers)
+[GIN-debug] GET    /schedule/DeleteScheduleById --> test/controller.DeleteScheduleById (6 handlers)
+[GIN-debug] POST   /upload                   --> test/controller.UpdatePicture (6 handlers)
+[GIN-debug] GET    /user/image               --> test/controller.GetImageById (6 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on 0.0.0.0:8080
+[GIN-debug] [ERROR] listen tcp 0.0.0.0:8080: bind: address already in use
+2021/12/26 00:59:22 listen tcp 0.0.0.0:8080: bind: address already in use

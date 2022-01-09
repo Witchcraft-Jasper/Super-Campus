@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="f59e351f-004b-4860-8048-4273204d6e48" name="goremote">
+        <fileTransfer rootFolder="/root" accessType="SFTP" host="120.53.118.249" port="22" sshConfigId="19fbb166-dabd-434a-b4f5-532b82491d94" sshConfig="root@120.53.118.249:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

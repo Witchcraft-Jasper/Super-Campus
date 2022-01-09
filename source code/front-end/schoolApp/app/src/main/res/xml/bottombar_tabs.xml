@@ -1,0 +1,22 @@
+<tabs>
+    <tab
+        id="@+id/tab_classTable"
+        icon="@drawable/ic_account_balance"
+        title="Class Table"
+        barColorWhenSelected="#3A82F8" />
+    <tab
+        id="@+id/tab_lostFound"
+        icon="@drawable/ic_ad_units"
+        title="Lost/Found"
+        barColorWhenSelected="#F46538"/>
+    <tab
+        id="@+id/tab_info"
+        icon="@drawable/ic_amp_stories"
+        title="Message Wall"
+        barColorWhenSelected="#EA2B68"/>
+    <tab
+        id="@+id/tab_my"
+        icon="@drawable/ic_face"
+        title="My"
+        barColorWhenSelected="#F1C12F"/>
+</tabs>

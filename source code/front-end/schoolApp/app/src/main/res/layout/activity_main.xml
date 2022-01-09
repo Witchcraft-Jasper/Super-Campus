@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.campusapp.MainActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_x="0dp"
+        android:layout_y="0dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/boom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="315dp"
+        android:layout_y="580dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:bmb_buttonEnum="textOutsideCircle"
+        app:bmb_piecePlaceEnum="piecePlace_dot_6_3"
+        app:bmb_buttonPlaceEnum="buttonPlace_sc_6_4"
+        app:bmb_boomEnum="boomHorizontalThrow_2"
+        app:bmb_showDuration="400"
+        app:bmb_hideDuration="400"
+        app:bmb_rotateDegree="720"
+        app:bmb_shadowEffect="true"
+        app:bmb_rippleEffect="true"
+        />
+
+<!--    <com.nightonke.boommenu.BoomMenuButton-->
+<!--        android:id="@+id/boom"-->
+<!--        android:layout_width="75dp"-->
+<!--        android:layout_height="75dp"-->
+<!--        app:boom_button_color="@color/colorPrimary"-->
+<!--        app:boom_button_pressed_color="@color/colorPrimary"-->
+<!--        app:boom_inActionBar="false"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/bottomBar"-->
+<!--        app:layout_constraintEnd_toEndOf="parent" />-->
+    <!--        <View-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="0.5dp"-->
+        <!--            android:background="@color/DDDDDD"/>-->
+    <com.roughike.bottombar.BottomBar
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:bb_activeTabColor="@color/E3E3E3"
+        app:bb_badgesHideWhenActive="true"
+        app:bb_inActiveTabAlpha="0.6"
+        app:bb_behavior="shifting"
+        app:bb_showShadow="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:bb_tabXmlResource="@xml/bottombar_tabs"
+        app:bb_titleTextAppearance="@style/MyTextAppearance" />
+</androidx.constraintlayout.widget.ConstraintLayout>

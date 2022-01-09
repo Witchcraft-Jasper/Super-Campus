@@ -1,0 +1,22 @@
+{
+  "app_name": "VerifySecurity",
+  "app_mode": "debug",
+  "app_host": "0.0.0.0",
+  "app_port": "8080",
+  "session_buffer": "redis",
+  "database": {
+    "driver": "mysql",
+    "user": "root",
+    "password": "123456",
+    "host": "120.53.118.249",
+    "port": "3306",
+    "db_name": "android",
+    "charset": "utf8",
+    "show_sql": false
+  },
+  "redis": {
+    "password": "",
+    "host": "59.110.216.139",
+    "port": "6379"
+  }
+}
